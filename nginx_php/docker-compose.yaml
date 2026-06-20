@@ -1,0 +1,79 @@
+services:
+  # Контейнер с Nginx
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    image: anbprog/nginx
+    container_name: "${CONTAINER_NAME}"
+    # Проброс портов
+    ports:
+      - "80:80"
+    volumes:
+       - ./code:/data/anbprog.local
+    depends_on:
+      - php-fpm
+    networks:
+      - app-network      
+
+
+  # Контейнер с PHP-FPM
+  php-fpm:
+    build:
+      context: ./fpm
+      dockerfile: Dockerfile
+    image: anbprog/php
+    container_name: php-fpm
+    volumes:
+       - ./code:/data/anbprog.local
+    networks:
+      - app-network    
+
+  # Кэш Redis
+  redis:
+    image: redis:alpine
+    container_name: cache_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - app-network
+
+  # Кэш Memcached
+  memcached:
+    image: memcached:alpine
+    container_name: cache_memcached
+    ports:
+      - "11211:11211"
+    networks:
+      - app-network
+
+  # База данных PostgreSQL (или MySQL)
+  db:
+    image: postgres:15-alpine
+    container_name: db_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: my_database
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+
+# Именованные директории (volumes) для сохранения данных db и redis
+volumes:
+  db_data:
+  redis_data:
+
+# Изолированная сеть для общения контейнеров внутри compose
+networks:
+  app-network:
+    driver: bridge
+
+
+
