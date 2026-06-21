@@ -8,8 +8,16 @@ RUN apt-get update && apt-get install -y \
 	libonig-dev \
 	libzip-dev \
 	libssl-dev \
+        libmemcached-dev \
+        zlib1g-dev \
 	&& docker-php-ext-install -j$(nproc) iconv mbstring mysqli pdo_mysql zip gd \
-	&& docker-php-ext-configure gd --with-freetype --with-jpeg
+	&& docker-php-ext-configure gd --with-freetype --with-jpeg \
+        && rm -rf /var/lib/apt/lists/*
+
+# Устанавливаем расширение memcached через PECL и включаем его
+RUN pecl install memcached \
+    && docker-php-ext-enable memcached
+
 
 # Для русской локали
 RUN apt update && apt install -y locales && \

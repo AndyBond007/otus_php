@@ -14,7 +14,7 @@ services:
     depends_on:
       - php-fpm
     networks:
-      - app-network      
+      - app-network
 
 
   # Контейнер с PHP-FPM
@@ -27,14 +27,12 @@ services:
     volumes:
        - ./code:/data/anbprog.local
     networks:
-      - app-network    
+      - app-network
 
   # Кэш Redis
   redis:
     image: redis:alpine
     container_name: cache_redis
-    ports:
-      - "6379:6379"
     volumes:
       - redis_data:/data
     networks:
@@ -44,8 +42,6 @@ services:
   memcached:
     image: memcached:alpine
     container_name: cache_memcached
-    ports:
-      - "11211:11211"
     networks:
       - app-network
 
@@ -53,8 +49,6 @@ services:
   db:
     image: postgres:15-alpine
     container_name: db_postgres
-    ports:
-      - "5432:5432"
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
