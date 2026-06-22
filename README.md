@@ -53,7 +53,7 @@ git config --global user.email "ваш@email.com"
 Генерация ключа
 
 ```txt
-ssh-keygen -t edGitHub -C "ваша_почта@пример.com"
+ssh-keygen -t ed25519 -C "ваша_почта@пример.com"
 ```
 
 Соберем образ
