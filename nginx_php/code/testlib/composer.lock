@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "797c4a3ab7e4b3054722b6a388e6a9a3",
+    "packages": [
+        {
+            "name": "anbprog/firstlib",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AndyBond007/firstlib.git",
+                "reference": "38309925006c863a13ad0f81b99eda2bf5cf2600"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AndyBond007/firstlib/zipball/38309925006c863a13ad0f81b99eda2bf5cf2600",
+                "reference": "38309925006c863a13ad0f81b99eda2bf5cf2600",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firstlib\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "AndyBond",
+                    "email": "79160937104@yandex.ru"
+                }
+            ],
+            "description": "My first library for Composer",
+            "support": {
+                "issues": "https://github.com/AndyBond007/firstlib/issues",
+                "source": "https://github.com/AndyBond007/firstlib/tree/v1.0.0"
+            },
+            "time": "2026-06-28T21:54:48+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}
