@@ -4,21 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "797c4a3ab7e4b3054722b6a388e6a9a3",
+    "content-hash": "1eb5ea6f41fe00f0b1a0f48a33eeb755",
     "packages": [
         {
             "name": "anbprog/firstlib",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AndyBond007/firstlib.git",
-                "reference": "38309925006c863a13ad0f81b99eda2bf5cf2600"
+                "reference": "f8639cebd4d1df88ba8ca0d77d76ae1eebc743c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AndyBond007/firstlib/zipball/38309925006c863a13ad0f81b99eda2bf5cf2600",
-                "reference": "38309925006c863a13ad0f81b99eda2bf5cf2600",
+                "url": "https://api.github.com/repos/AndyBond007/firstlib/zipball/f8639cebd4d1df88ba8ca0d77d76ae1eebc743c9",
+                "reference": "f8639cebd4d1df88ba8ca0d77d76ae1eebc743c9",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
             },
             "type": "library",
             "autoload": {
@@ -39,9 +42,9 @@
             "description": "My first library for Composer",
             "support": {
                 "issues": "https://github.com/AndyBond007/firstlib/issues",
-                "source": "https://github.com/AndyBond007/firstlib/tree/v1.0.0"
+                "source": "https://github.com/AndyBond007/firstlib/tree/v1.1.0"
             },
-            "time": "2026-06-28T21:54:48+00:00"
+            "time": "2026-06-29T09:03:59+00:00"
         }
     ],
     "packages-dev": [],
