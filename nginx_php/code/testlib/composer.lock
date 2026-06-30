@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1eb5ea6f41fe00f0b1a0f48a33eeb755",
+    "content-hash": "d7f3d8fc5ad68420b408a19637cd7cf3",
     "packages": [
         {
             "name": "anbprog/firstlib",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AndyBond007/firstlib.git",
-                "reference": "f8639cebd4d1df88ba8ca0d77d76ae1eebc743c9"
+                "reference": "fff69ed5b75eb3ab0585c9162c8ddc776d862a6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AndyBond007/firstlib/zipball/f8639cebd4d1df88ba8ca0d77d76ae1eebc743c9",
-                "reference": "f8639cebd4d1df88ba8ca0d77d76ae1eebc743c9",
+                "url": "https://api.github.com/repos/AndyBond007/firstlib/zipball/fff69ed5b75eb3ab0585c9162c8ddc776d862a6b",
+                "reference": "fff69ed5b75eb3ab0585c9162c8ddc776d862a6b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=7.0"
             },
             "type": "library",
             "autoload": {
@@ -42,9 +42,9 @@
             "description": "My first library for Composer",
             "support": {
                 "issues": "https://github.com/AndyBond007/firstlib/issues",
-                "source": "https://github.com/AndyBond007/firstlib/tree/v1.1.0"
+                "source": "https://github.com/AndyBond007/firstlib/tree/v1.2.0"
             },
-            "time": "2026-06-29T09:03:59+00:00"
+            "time": "2026-06-30T14:18:19+00:00"
         }
     ],
     "packages-dev": [],
