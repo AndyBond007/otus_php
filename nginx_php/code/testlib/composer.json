@@ -1,0 +1,5 @@
+{
+    "require": {
+        "anbprog/firstlib": "^1.2"
+    }
+}
